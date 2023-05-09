@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoSuite">
+<test name="Assertion">
+<classes>
+<class name="TestNG.AssertionDemo"/>
+</classes>
+</test>
+
+<!--  <parameter name="loginName" value="dev123">
+</parameter>
+<parameter name="Password" value="Devattri@12345"></parameter> -->
+
+<!--  <parameter name="a" value="5"/>  
+<parameter name="b" value="3"/>  
+<test name="Sum">   
+  <classes>  
+  <class name= "TestNG.Sum"/>  
+  </classes>  
+  </test>   Test 
+  <test name="Subtract">  
+  <classes>  
+  <class name="TestNG.Subtract"/>  
+  </classes>  
+  </test>  
+  <test name="Multiply">  
+  <classes>  
+  <class name="TestNG.Multiply"/>  
+  </classes>   -->
+  
+  
+  <!--  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG.Annotations_1"> 
+     <class name="TestNG.Demo_Btes">
+     <methods>
+					<include name="OpenWebsite"></include>
+					<exclude name="test6"></exclude>
+				</methods>
+       <methods>
+    <include name= "add"> 
+     </include>
+     </methods>
+     </class>
+    <class name="TestNG.Annotations"> 
+    <methods> 
+    <exclude name="division"> </exclude>
+    </methods> 
+    </class> 
+    <class name="SampleTest"/>  
+    </class>
+    </classes>  -->
+    
+  
+</suite> <!-- Suite -->
