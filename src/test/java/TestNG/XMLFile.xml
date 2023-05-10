@@ -3,9 +3,35 @@
 <suite name="DemoSuite">
 <test name="Assertion">
 <classes>
-<class name="TestNG.AssertionDemo"/>
+<class name="TestNG.WindowHandling"/>
 </classes>
 </test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--  <parameter name="loginName" value="dev123">
 </parameter>
