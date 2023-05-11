@@ -1,77 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-09T14:59:13 IST" name="Default suite" finished-at="2023-05-09T14:59:59 IST" duration-ms="45800">
+  <suite started-at="2023-05-09T20:19:37 IST" name="DemoSuite" finished-at="2023-05-09T20:19:48 IST" duration-ms="11450">
     <groups>
     </groups>
-    <test started-at="2023-05-09T14:59:13 IST" name="Default test" finished-at="2023-05-09T14:59:59 IST" duration-ms="45800">
-      <class name="TestNG.Test_DataProvider">
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Test_DataProvider@1e800aaa]" started-at="2023-05-09T14:59:14 IST" name="test" data-provider="container" finished-at="2023-05-09T14:59:39 IST" duration-ms="24576" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[puja456]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kshkjasgdku8]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-05-09T20:19:37 IST" name="Assertion" finished-at="2023-05-09T20:19:48 IST" duration-ms="11450">
+      <class name="TestNG.WindowHandling">
+        <test-method signature="test()[pri:0, instance:TestNG.WindowHandling@3d51f06e]" started-at="2023-05-09T20:19:37 IST" name="test" finished-at="2023-05-09T20:19:48 IST" duration-ms="11355" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2fc1a534cbc74c60456fd0ee2508c665, findElement {using=id, value=newTabBtn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62142}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62142/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2fc1a534cbc74c60456fd0ee2508c665]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2fc1a534cbc74c60456fd0ee2508c665, findElement {using=id, value=newTabBtn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62142}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62142/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2fc1a534cbc74c60456fd0ee2508c665
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at TestNG.WindowHandling.test(WindowHandling.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Test_DataProvider@1e800aaa]" started-at="2023-05-09T14:59:39 IST" name="test" data-provider="container" finished-at="2023-05-09T14:59:45 IST" duration-ms="6748" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[aman858]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ohisbhc78]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Test_DataProvider@1e800aaa]" started-at="2023-05-09T14:59:45 IST" name="test" data-provider="container" finished-at="2023-05-09T14:59:52 IST" duration-ms="6850" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[happy6969]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ihJSBHDVS^]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Test_DataProvider@1e800aaa]" started-at="2023-05-09T14:59:52 IST" name="test" data-provider="container" finished-at="2023-05-09T14:59:59 IST" duration-ms="6815" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[karan741]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[xdsrl;;ko]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- TestNG.Test_DataProvider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- TestNG.WindowHandling -->
+    </test> <!-- Assertion -->
+  </suite> <!-- DemoSuite -->
 </testng-results>

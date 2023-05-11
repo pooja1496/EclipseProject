@@ -28,6 +28,8 @@ public class WindowHandling {
 		parentWindowId=driver.getWindowHandle();
 		Set<String> WindowIds= driver.getWindowHandles();
 		System.out.println("parent id : " +parentWindowId);
+		System.out.println("temporary text");
+		System.out.println("temporary text changes............");
 			for (String windowid : WindowIds) {
 				driver.switchTo().window(windowid);
 				System.out.println(driver.getWindowHandle());
